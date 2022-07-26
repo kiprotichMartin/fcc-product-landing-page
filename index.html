@@ -1,194 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon -->
   <link rel="shortcut icon" href="/pear-favicon.ico" type="image/x-icon">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
-
-  <script src="https://kit.fontawesome.com/89b3151c1d.js" crossorigin="anonymous"></script>
-
-  <title>Product Landing Page</title>
+  
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Test Landing Page</title>
 </head>
+
 <body>
-  <!-- Header -->
-  <header id="header" class="container mb-5">
-    <nav id="nav-bar" class="navbar">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="/pear-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Pear
-      </a>
-      <!-- Navbar links -->
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" href="#feature">Feature</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#howitworks">How It Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#pricing">Pricing</a>
-        </li>
+  <header id="header">
+    <!-- Nav start -->
+    <nav class="nav-bar">
+      <!-- Brand name -->
+      <div class="brand-name">
+        <!-- Logo -->
+        <a href="/"><img src="/pear-logo.png" alt="Pear logo" id="header-img"></a>
+        <!-- Logo -->
+        <p>PEAR</p>
+      </div>
+      <!-- Brand name -->
+
+      <!-- Nav links -->
+      <ul class="nav-links">
+        <!-- Hamburger -->
+        <input type="checkbox" id="checkbox-toggle">
+        <label for="checkbox-toggle" class="hamburger">&#9776</label>
+        <!-- Hamburger -->
+
+        <!-- Nav Menus -->
+        <div class="menu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#workings">Hot it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </div>
+        <!-- Nav Menus -->
       </ul>
+      <!-- Nav links -->
     </nav>
+    <!-- Nav end -->
   </header>
 
-  <!-- Main content of webpage -->
-  <main class="container">
-    <!-- Sign up form -->
-    <form action="" id="form" class="d-flex justify-content-center mb-5">
-      <!-- Form group -->
-      <div class="form-group text-center">
-        <p>Need more convincing? Sign up to our newsletter</p>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" class="form-control mb-3" 
-        placeholder="martinkiprotich.mk:gmail.com">
+  <main>
+    <!-- Form -->
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <label for="email">Subscribe to get notified of future updates:</label>
+      <input type="email" id="email" placeholder="martinkiprotich.mk@gmail.com">
 
-        <a href="https://www.freecodecamp.com/email-submit">
-          <input type="submit" id="submit" class="form-control btn btn-primary" value="Sign Up!">
-        </a>
-      </div>
-      <!-- Form group -->
+      <input id="submit" type="submit" value="Sign Up">
     </form>
-    <!-- Sign up form -->
+    <!-- Form -->
 
     <!-- Features -->
-    <div id="feature">
+    <div id="features" class="container__column">
       <!-- Feature 1 -->
-      <div class="card mb-4" style="max-width: 70vw;">
-        <div class="row no-gutters">
-          <div class="col-md-2">
-            <img src="/money-bill-1-solid.svg" alt="money icon" class="img-fluid">
-          </div>
-          <div class="col-md-10">
-            <div class="card-body">
-              <h5 class="card-title">Affordable</h5>
-              <p class="card-text">Pear compared to other streaming serivices like Hulu, 
-                Netflix & Amazon Prime is relatively affordable.</p>
-            </div>
-          </div>
+      <div class="container">
+        <!-- Image -->
+        <div class="container__image">
+          <img src="/money-bill.svg" alt="money icon">
+        </div>
+
+        <!-- Right side -->
+        <div class="container__feature">
+          <h3>Affordable</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil
+            sit perferendis cumque, porro distinctio, aut autem aperiam atque eum.
+          </p>
         </div>
       </div>
       <!-- Feature 1 -->
 
       <!-- Feature 2 -->
-      <div class="card mb-4" style="max-width: 70vw;">
-        <div class="row no-gutters">
-          <div class="col-md-2">
-            <img src="/truck-fast-solid.svg" alt="truck icon" class="img-fluid">
-          </div>
-          <div class="col-md-10">
-            <div class="card-body">
-              <h5 class="card-title">Frequent Updates</h5>
-              <p class="card-text">Pear has partnered up with great media houses like 
-                Disney Studios, Marvek Studios, Peacock, CBS and many more. The will 
-                overflowing content to keep you hooked. Never miss a thing!</p>
-            </div>
-          </div>
+      <div class="container">
+        <!-- Image -->
+        <div class="container__image">
+          <img src="/headphones-alt.svg" alt="headphones icon">
+        </div>
+
+        <!-- Right side -->
+        <div class="container__feature">
+          <h3>24hr Support</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil
+            sit perferendis cumque, porro distinctio, aut autem aperiam atque eum.
+          </p>
         </div>
       </div>
       <!-- Feature 2 -->
-      
+
       <!-- Feature 3 -->
-      <div class="card mb-4" style="max-width: 70vw;">
-        <div class="row no-gutters">
-          <div class="col-md-2 img-fluid">
-            <img src="/people-group-solid.svg" alt="people group icon" class="img-fluid">
-          </div>
-          <div class="col-md-10">
-            <div class="card-body">
-              <h5 class="card-title">For the people</h5>
-              <p class="card-text">Here at Pear we listen to your suggestions, complaints 
-                and requests. We strive to keep our customers happy.</p>
-            </div>
-          </div>
+      <div class="container">
+        <!-- Image -->
+        <div class="container__image">
+          <img src="/check-square.svg" alt="check square icon">
+        </div>
+
+        <!-- Right side -->
+        <div class="container__feature">
+          <h3>Quality Content</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil
+            sit perferendis cumque, porro distinctio, aut autem aperiam atque eum.
+          </p>
         </div>
       </div>
       <!-- Feature 3 -->
     </div>
-    <!-- Feature -->
+    <!-- Features -->
 
-    <!-- Video -->
-    <div class="embed-responsive embed-responsive-16by9 mb-5">
-      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/48OJbbI0DfE" allowfullscreen=""></iframe>
+    <!-- Video Embed -->
+    <div class="video" id="workings">
+      <!-- <iframe src="//www.youtube.com/embed/watch?v=OEV8gMkCHXQ" width="750" height="563" frameborder="0"></iframe> -->
+      <iframe width="650" height="400" src="https://www.youtube.com/embed/OEV8gMkCHXQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <!-- Video -->
+    <!-- Video Embed -->
 
     <!-- Pricing -->
-    <div id="pricing" class="card-deck mb-5">
-      <!-- Card 1 -->
-      <div class="card text-center">
-        <div class="card-header">
-          SD
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Ksh. 800/month</h5>
-          <p class="card-text">SD video quality</p>
-          <a href="#" class="btn btn-primary">Accept Plan</a>
-        </div>
-      </div>
-      <!-- Card 1 -->
+    <div class="pricing" id="pricing">
+      <!-- Pricing column -->
+      <div class="pricing__column">
+        <!-- Title -->
+        <div class="pricing__title">
+          <h3>SD</h3>
+        </div><br>
 
-      <!-- Card 2 -->
-      <div class="card text-center">
-        <div class="card-header">
-          HD
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Ksh. 1300/month</h5>
-          <p class="card-text">HD video quality</p>
-          <a href="#" class="btn btn-primary">Accept Plan</a>
-        </div>
-      </div>
-      <!-- Card 2 -->
+        <!-- Price -->
+        <strong>Ksh.800/per month</strong><br>
 
-      <!-- Card 3 -->
-      <div class="card text-center">
-        <div class="card-header">
-          4K
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Ksh. 1800/month</h5>
-          <p class="card-text">4K video quality</p>
-          <a href="#" class="btn btn-primary">Accept Plan</a>
-        </div>
+        <!-- Description -->
+        <ul>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+        </ul>
+
+        <!-- Button -->
+        <input id="#" type="submit" value="Accept Plan">
       </div>
-      <!-- Card 3 -->
-    </div>
-    <!-- Pricing -->
+      <!-- Pricing column -->
+
+      <!-- Pricing column -->
+      <div class="pricing__column">
+        <!-- Title -->
+        <div class="pricing__title">
+          <h3>HD</h3>
+        </div><br>
+
+        <!-- Price -->
+        <strong>Ksh.1300/per month</strong><br>
+
+        <!-- Description -->
+        <ul>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+        </ul>
+
+        <!-- Button -->
+        <input id="#" type="submit" value="Accept Plan">
+      </div>
+      <!-- Pricing column -->
+
+      <!-- Pricing column -->
+      <div class="pricing__column">
+        <!-- Title -->
+        <div class="pricing__title">
+          <h3>4K</h3>
+        </div><br>
+
+        <!-- Price -->
+        <strong>Ksh.1800/per month</strong><br>
+
+        <!-- Description -->
+        <ul>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+        </ul>
+
+        <!-- Button -->
+        <input id="#" type="submit" value="Accept Plan">
+      </div>
+      <!-- Pricing column -->
   </main>
 
-  <!-- Footer -->
-  <footer class="page-footer font-small bg-dark text-white">
-  
+  <footer id="footer">
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2022 Copyright:
-      <a href="#"> Pear Streaming Services</a>
-    </div>
+    <p>&copy; Copyright 2021 Martin Kiprotich</p>
     <!-- Copyright -->
-  
   </footer>
-  <!-- Footer -->
-  
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
 </body>
+
 </html>
